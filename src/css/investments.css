@@ -277,7 +277,8 @@ img.f-left {
   .main-pic img {
     width: 100%;
     height: 250px;
-    object-fit: cover; }
+    object-fit: cover;
+    object-position: center bottom; }
 
 .menu {
   color: #fff;

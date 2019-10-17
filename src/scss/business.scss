@@ -314,6 +314,7 @@ img.f-left {
 		width: 100%;
     height: 250px;
     object-fit: cover;
+    object-position: center bottom;
 	}
 }
 
@@ -632,6 +633,10 @@ img.f-left {
 	width:100%;
 	padding:0 10px 0;
 }
+#lightbox-container-image-data {
+	padding:0 10px;
+	color:#666;
+}
 .menu {
   background: url(../img/menu-bg.gif) repeat-x left top;
   border-radius: 12px;
@@ -658,10 +663,6 @@ img.f-left {
         }
       }
     }
-}
-#lightbox-container-image-data {
-	padding:0 10px;
-	color:#666;
 }
 #lightbox-container-image-data #lightbox-image-details {
 	display:none;
