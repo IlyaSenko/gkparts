@@ -350,11 +350,12 @@ img.f-left {
 .main-pic {
   padding: 0 0 20px 0; }
   .main-pic img {
-    width: 100%;
+    width: calc(100% - 10px);
     height: 250px;
     object-fit: cover;
     object-position: center bottom;
-    border-radius: 12px; }
+    border-radius: 12px;
+    border: 5px solid #d3d2c4; }
 
 .menu {
   color: #fff;

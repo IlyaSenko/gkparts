@@ -423,11 +423,12 @@ img.f-left {
 	padding:0 0 20px 0;
 
 	img {
-		width: 100%;
+		width: calc(100% - 10px);
     height: 250px;
     object-fit: cover;
     object-position: center bottom;
     border-radius: 12px;
+    border: 5px solid rgb(211, 210, 196);
 	}
 }
 
