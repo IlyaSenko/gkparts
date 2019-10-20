@@ -1,40 +1,122 @@
 html {
-	background:#b3ae90 url('../images/html-bg.gif') repeat-x left top;
+	background:#b3ae90 url(../images/html-bg.gif) repeat-x left top;
 	font-size:100%;
+}
+body {
+	font-size:62.5%; /* ~10px */
 }
 
 .menu {
   background: url(../img/menu-bg.gif) repeat-x left top;
   border-radius: 12px;
-	overflow: hidden;
+	// overflow: hidden;
 
     ul {
       padding: 0;
       display: flex;
       justify-content: space-around;
       height: 45px;
-      overflow: hidden;
+      // overflow: hidden;
       align-items: center;
+
+			.first-li {
+				background: none !important;
+			}
+
+			.last-li a {
+				border-radius: 0 12px 12px 0;
+			}
 
       li {
         background: url(../images/menu-separator.gif) no-repeat left top;
         float: left;
         list-style: none;
-				width: 135.5px;
+				width: 189.8px;
 
         a {
 					width: calc(100% - 32px);
           color: white;
           text-decoration: none;
+					text-align: center;
         }
       }
+
+			.news {
+				width: 129.8px;
+
+				.dropdown-content {
+					min-width: 129.8px !important;
+				}
+			}
+
+			.business {
+				width: 249.8px;
+			}
     }
+
+		.dropbtn {
+		  // background-color: #4CAF50;
+		  color: white;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		}
+
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f1f1f1;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+			height: 45px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-evenly;
+			line-height: 12px !important;
+			text-align: center;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: #ddd;}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {display: block;}
+
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.dropdown:hover .dropbtn {background-color: #3e8e41;}
 }
 
+.first-li {
 
-body {
-	font-size:62.5%; /* ~10px */
+	.dropbtn {
+		border-radius: 12px 0 0 0;
+	}
+
+	.dropdown-content {
+		border-radius: 12px 0 0 0;
+
+		a:first-child {
+			border-radius: 12px 0 0 0;
+		}
+	}
 }
+
 body, input, select, textarea, td, th {
 	color:#000;
 	font-family:Arial;
@@ -109,7 +191,7 @@ ul {
 }
 
 #header .menu {
-	background:url('../images/menu-bg.gif') repeat-x left top;
+	background:url(../images/menu-bg.gif) repeat-x left top;
 }
 #header .menu a {
 	float:left;
@@ -118,10 +200,10 @@ ul {
 }
 #header .menu a:hover,
 #header .menu .active a {
-	background:url('../images/menu-bg-active.gif') repeat-x left top;
+	background:url(../images/menu-bg-active.gif) repeat-x left top;
 }
 #header .menu li {
-	background:url('../images/menu-separator.gif') no-repeat left top;
+	background:url(../images/menu-separator.gif) no-repeat left top;
 	float:left;
 	list-style:none;
 	margin:0 0 0 -2px;
@@ -129,21 +211,21 @@ ul {
 }
 #header .menu ul {
 	height:45px;
-	overflow:hidden;
+	// overflow:hidden;
 	padding:0;
 }
 #header .menu .active .first span,
 #header .menu .first:hover span {
-	background:url('../images/menu-bg-active-left.gif') no-repeat left top;
+	background:url(../images/menu-bg-active-left.gif) no-repeat left top;
 	float:left;
 	margin:0 -16px;
 	padding:0 16px;
 }
 #header .menu .bg-left {
-	background:url('../images/menu-bg-left.gif') no-repeat left top;
+	background:url(../images/menu-bg-left.gif) no-repeat left top;
 }
 #header .menu .bg-right {
-	background:url('../images/menu-bg-right.gif') no-repeat right top;
+	background:url(../images/menu-bg-right.gif) no-repeat right top;
 	padding:5px 0 0 5px;
 }
 
@@ -156,7 +238,7 @@ ul {
 	padding:0 0 0 22px;
 }
 #content dt {
-	background:url('../images/li-bg.gif') no-repeat left 20px;
+	background:url(../images/li-bg.gif) no-repeat left 20px;
 	font-weight:bold;
 	padding:18px 0 0 22px;
 }
@@ -172,7 +254,7 @@ ul {
 	padding:0;
 }
 #content li {
-	background:url('../images/li-bg.gif') no-repeat left 2px;
+	background:url(../images/li-bg.gif) no-repeat left 2px;
 	font-size:1.15em;
 	list-style:none;
 	margin:0 0 10px 0;
@@ -226,32 +308,32 @@ ul {
 }
 
 .c-block .bg-bottom .corner-left {
-	background-image:url('../images/corner-bottom-left.png');
+	background-image:url(../images/corner-bottom-left.png);
 }
 .c-block .bg-bottom .corner-right {
-	background-image:url('../images/corner-bottom-right.png');
+	background-image:url(../images/corner-bottom-right.png);
 }
 .c-block .bg-bottom .inner {
-	background:url('../images/bg-bottom.png') repeat-x left top;
+	background:url(../images/bg-bottom.png) repeat-x left top;
 }
 
 .c-block .bg-left {
-	background:url('../images/bg-left.png') repeat-y left top;
+	background:url(../images/bg-left.png) repeat-y left top;
 }
 
 .c-block .bg-right {
-	background:url('../images/bg-right.png') repeat-y right top;
+	background:url(../images/bg-right.png) repeat-y right top;
 	width:100%;
 }
 
 .c-block .bg-top .corner-left {
-	background-image:url('../images/corner-top-left.png');
+	background-image:url(../images/corner-top-left.png);
 }
 .c-block .bg-top .corner-right {
-	background-image:url('../images/corner-top-right.png');
+	background-image:url(../images/corner-top-right.png);
 }
 .c-block .bg-top .inner {
-	background:url('../images/bg-top.png') repeat-x left top;
+	background:url(../images/bg-top.png) repeat-x left top;
 }
 
 .c-block .corner-left,
@@ -322,11 +404,11 @@ img.f-left {
 }
 
 .form-contact .input {
-	background:url('../images/bg-input.gif') no-repeat right top;
+	background:url(../images/bg-input.gif) no-repeat right top;
 	height:32px;
 }
 .form-contact .textarea {
-	background:url('../images/bg-textarea.gif') no-repeat right top;
+	background:url(../images/bg-textarea.gif) no-repeat right top;
 	height:138px;
 }
 
@@ -345,6 +427,7 @@ img.f-left {
     height: 250px;
     object-fit: cover;
     object-position: center bottom;
+    border-radius: 12px;
 	}
 }
 
@@ -361,7 +444,7 @@ img.f-left {
 
 
 .news .hr {
-	background:url('../images/hr.gif') repeat-x left top;
+	background:url(../images/hr.gif) repeat-x left top;
 	height:1px;
 	margin:0 0 1em 0;
 	overflow:hidden;
@@ -400,32 +483,32 @@ img.f-left {
 }
 
 .tabl .bg-left {
-	background:url('../images/tabl-bg.gif') repeat-y left top;
+	background:url(../images/tabl-bg.gif) repeat-y left top;
 	width:501px;
 }
 
 .tabl .bg-right {
-	background:url('../images/tabl-bg.gif') repeat-y right top;
+	background:url(../images/tabl-bg.gif) repeat-y right top;
 }
 
 .tabl .bg-top {
-	background:url('../images/tabl-bg.gif') repeat-x left top;
+	background:url(../images/tabl-bg.gif) repeat-x left top;
 }
 .tabl .bg-top .corner-left {
-	background:url('../images/tabl-corner-top-left.gif') no-repeat left top;
+	background:url(../images/tabl-corner-top-left.gif) no-repeat left top;
 }
 .tabl .bg-top .corner-right {
-	background:url('../images/tabl-corner-top-right.gif') no-repeat right top;
+	background:url(../images/tabl-corner-top-right.gif) no-repeat right top;
 }
 
 .tabl .bg-bottom {
-	background:url('../images/tabl-bg.gif') repeat-x left bottom;
+	background:url(../images/tabl-bg.gif) repeat-x left bottom;
 }
 .tabl .bg-bottom .corner-left {
-	background:url('../images/tabl-corner-bottom-left.gif') no-repeat left bottom;
+	background:url(../images/tabl-corner-bottom-left.gif) no-repeat left bottom;
 }
 .tabl .bg-bottom .corner-right {
-	background:url('../images/tabl-corner-bottom-right.gif') no-repeat right bottom;
+	background:url(../images/tabl-corner-bottom-right.gif) no-repeat right bottom;
 	padding:3px;
 }
 
@@ -466,7 +549,7 @@ img.f-left {
 
 
 .tooltip {
-	background:#f2f2ee url('../images/tooltip-bg.gif') repeat-y left top;
+	background:#f2f2ee url(../images/tooltip-bg.gif) repeat-y left top;
 	display:none;
 	margin:-4px 0 0 0;
 	position:absolute;
@@ -492,10 +575,10 @@ img.f-left {
 	background:none;
 }
 .tooltip .bg-top .corner-left {
-	background:url('../images/tooltip-corner-top-left.gif') no-repeat left top;
+	background:url(../images/tooltip-corner-top-left.gif) no-repeat left top;
 }
 .tooltip .bg-top .corner-right {
-	background:url('../images/tooltip-corner-top-right.gif') no-repeat right top;
+	background:url(../images/tooltip-corner-top-right.gif) no-repeat right top;
 	padding:0;
 }
 
@@ -503,10 +586,10 @@ img.f-left {
 	background:none;
 }
 .tooltip .bg-bottom .corner-left {
-	background:url('../images/tooltip-corner-bottom-left.gif') no-repeat left bottom;
+	background:url(../images/tooltip-corner-bottom-left.gif) no-repeat left bottom;
 }
 .tooltip .bg-bottom .corner-right {
-	background:url('../images/tooltip-corner-bottom-right.gif') no-repeat right bottom;
+	background:url(../images/tooltip-corner-bottom-right.gif) no-repeat right bottom;
 	padding:12px 20px 12px 28px;
 }
 
@@ -520,7 +603,7 @@ img.f-left {
 
 
 .vr {
-	background-image:url('../images/px.gif');
+	background-image:url(../images/px.gif);
 	background-repeat:repeat-y;
 }
 
@@ -537,7 +620,7 @@ img.f-left {
 	width:584px;
 }
 #type-1 .col-2 .hr {
-	background:url('../images/px.gif') repeat-x left top;
+	background:url(../images/px.gif) repeat-x left top;
 	height:1px;
 	margin:25px 0 25px -25px;
 	overflow:hidden;

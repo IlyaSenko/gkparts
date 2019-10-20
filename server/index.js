@@ -1,7 +1,21 @@
 const path = require('path');
 const express = require('express');
 
-const pages = ['business', 'contacts', 'investments', 'news', 'purchase', 'selling'];
+const pages = ['projects' ,
+              'vacancies',
+              'articles',
+              'press',
+              'videos',
+              "selling-crops",
+              "selling-flour",
+              "selling-other",
+              "purchase",
+              "complexes",
+              'contacts',
+              "ukraine",
+              "belarus",
+              "eu"
+              ];
 
 const app = express();
 
@@ -17,19 +31,7 @@ app.use('/images', express.static(path.resolve(__dirname, '../src/images')));
 // })
 
 app.get('/', function (req, res) {
-  res.sendFile(path.resolve(__dirname, '../src/pug/test.html'))
-})
-
-app.get('/news', function (req, res) {
-  res.sendFile(path.resolve(__dirname, '../src/pug/news.html'))
-})
-
-app.get('/business', function (req, res) {
-  res.sendFile(path.resolve(__dirname, '../src/pug/business.html'))
-})
-
-app.get('/business', function (req, res) {
-  res.sendFile(path.resolve(__dirname, '../src/pug/purchase.html'))
+  res.sendFile(path.resolve(__dirname, '../src/pug/index.html'))
 })
 
 pages.forEach(item => {
