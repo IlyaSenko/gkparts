@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="../css/contacts.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<title>G.K. Parts Group</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/mail.helper.js"></script>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="js/ie_png.js"></script>
+<script type="text/javascript">
+	ie_png.fix('.png');
+</script>
+<![endif]-->
+</head>
+<body>
+	<div class="lang" style="display: flex; width: 50px; justify-content: space-evenly; position:relative; top: 10px;left: 40px;">
+		<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 18px;" type="button" name="button" id='ua'>ua</button>
+		<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 18px;" type="button" name="button" id='en'>en</button>
+	</div>
+<div id="main">
+	<!-- header -->
+	<div id="header">
+		<div class="clear">
+			<a href="/" class="logo"><img alt="Николаевская Аграрная Компания" src="../images/logo.png" style="height: 100px;" /></a>
+			<div class="inner">
+				<a href="/">Головна</a> &nbsp;|&nbsp; <a href="contacts">Контакти</a><br />
+				<span>Телефон: + 380 (95) 42 06 484</span>
+			</div>
+		</div>
+		<div class="menu">
+        <ul>
+            <li class="dropdown first-li">
+							<a class="dropbtn" href="/">Головна</a>
+							<div class="dropdown-content">
+								<a href="/">Про нас</a>
+								<a href="projects">Проекти</a>
+								<a href="vacancies">Вакансії</a>
+							</div>
+						</li>
+						<li class="dropdown news">
+							<a class="dropbtn" href="news">Новини</a>
+							<div class="dropdown-content">
+								<a href="articles">Статті</a>
+								<a href="press">Преса</a>
+								<a href="videos">Відео</a>
+							</div>
+						</li>
+						<li class="dropdown business">
+							<a class="dropbtn" href="business">Діяльність</a>
+							<div class="dropdown-content">
+								<a href="selling-crops">Реалізація зернових</a>
+								<a href="selling-flour">Реалізація борошна</a>
+								<a href="selling-other">Реалізація іншої сільськогосподарської продукції</a>
+								<a href="purchase">Закупівля сільськогосподарської продукції</a>
+								<a href="complexes">Проектування та будівництво елеваторних та млинових комплексів</a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a class="dropbtn" href="investments">Інвестиції</a>
+							<div class="dropdown-content">
+								<a href="ukraine">Україна</a>
+								<a href="belarus">Білорусь</a>
+								<a href="eu">Європейський союз</a>
+							</div>
+						</li>
+            <li class="last-li"><a href="contacts">Контакти</a></li>
+        </ul>
+    </div>
+	</div>
+	<!-- /header -->
+	<!-- content -->
+	<div id="content" class="c-block">
+		<div class="bg-top clear">
+			<div class="corner-left png"></div>
+			<div class="corner-right png"></div>
+			<div class="inner png"></div>
+		</div>
+		<div class="bg-left png"><div class="bg-right png">
+			<div class="inner">
+
+				<div class="main-pic"><img alt="" src="../images/contacts.jpg" /></div>
+				<h3>Контактна інформація</h3>
+				<h4>Офіс</h4>
+				<div class="clear">
+					Адреса: 01133,місто Київ,вулиця Євгена Коновальця, 32А, офіс 3
+					<div class="phones">тел./факс: + 380 (95) 42 06 484</div>
+					Електронна адреса: <a href="mailto:ukrainefoods@gmail.com">iukrainefoods@gmail.com</a>
+				</div>
+
+			</div>
+		</div></div>
+		<div class="bg-bottom clear">
+			<div class="corner-left png"></div>
+			<div class="corner-right png"></div>
+			<div class="inner png"></div>
+		</div>
+	</div>
+	<!-- /content -->
+	<!-- footer -->
+	<div id="footer">
+    <div class="copy">G.K. Parts Group &copy; 2010-2019</div>
+	</div>
+	<!-- /footer -->
+</div>
+<script type="text/javascript">
+var enButton = document.getElementById('en');
+var uaButton = document.getElementById('ua');
+console.log(enButton)
+enButton.addEventListener('click', () => {
+  document.cookie = "lang=en; expires: Fri, 31 Dec 9999 23:59:59 GMT";
+	location.reload();
+})
+
+uaButton.addEventListener('click', () => {
+  document.cookie = "lang=ua; expires: Fri, 31 Dec 9999 23:59:59 GMT";
+	location.reload();
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="../css/index.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="G.K.Parts Group" />
+<meta name="keywords" content="" />
+<title>G.K. Parts Group</title>
+</head>
+<body id="type-1">
+<div class="lang" style="display: flex; width: 50px; justify-content: space-evenly; position:relative; top: 10px;left: 40px;">
+	<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 18px;" type="button" name="button" id='ua'>ua</button>
+	<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 18px;" type="button" name="button" id='en'>en</button>
+</div>
+<div id="main">
+	<!-- header -->
+	<div id="header">
+		<div class="clear">
+			<a href="/" class="logo"><img alt="Николаевская Аграрная Компания" src="../images/logo.png" style="height: 100px;" /></a>
+			<div class="inner">
+				<a href="/"><%= __('header_1') %></a> &nbsp;|&nbsp; <a href="contacts"><%= __('header_2') %></a><br />
+				<span><%= __('header_3') %>: + 380 (95) 42 06 484</span>
+			</div>
+		</div>
+    <div class="menu">
+        <ul>
+            <li class="dropdown first-li">
+							<a class="dropbtn" href="/"><%= __('header_1') %></a>
+							<div class="dropdown-content">
+								<a href="/"><%= __('About') %></a>
+								<a href="projects"><%= __('Projects') %></a>
+								<a href="vacancies"><%= __('Vacancies') %></a>
+							</div>
+						</li>
+						<li class="dropdown news">
+							<a class="dropbtn" href="news"><%= __('News') %></a>
+							<div class="dropdown-content">
+								<a href="articles"><%= __('Articles') %></a>
+								<a href="press"><%= __('Press') %></a>
+								<a href="videos"><%= __('Video') %></a>
+							</div>
+						</li>
+						<li class="dropdown business">
+							<a class="dropbtn" href="business"><%= __('Business') %></a>
+							<div class="dropdown-content">
+								<a href="selling-crops"><%= __('Business_1') %></a>
+								<a href="selling-flour"><%= __('Business_2') %></a>
+								<a href="selling-other"><%= __('Business_3') %></a>
+								<a href="purchase"><%= __('Business_4') %></a>
+								<a href="complexes"><%= __('Business_5') %></a>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a class="dropbtn" href="investments"><%= __('Investments') %></a>
+							<div class="dropdown-content">
+								<a href="ukraine"><%= __('Ukraine') %></a>
+								<a href="belarus"><%= __('Belarus') %></a>
+								<a href="eu"><%= __('EU') %></a>
+							</div>
+						</li>
+            <li class="last-li"><a href="contacts"><%= __('header_2') %></a></li>
+        </ul>
+    </div>
+	</div>
+	<!-- /header -->
+	<!-- content -->
+	<div id="content" class="c-block">
+		<div class="bg-top clear">
+			<div class="corner-left png"></div>
+			<div class="corner-right png"></div>
+			<div class="inner png"></div>
+		</div>
+		<div class="bg-left png"><div class="bg-right png">
+			<div class="inner">
+				<div class="main-pic"><img alt="" src="../img/fon1.jpg" /></div>
+				<div class="clear vr">
+
+					<div class="col-1">
+						<h3><%= __('News') %></h3>
+						<div class="news">
+							<p><strong>18.11.2018</strong><br />
+							<%= __('main-news_1') %>
+							<a href="articles"><%= __('again-button') %></a></p>
+							<div class="hr"></div>
+							<p><strong>22.10.2018</strong><br />
+							<%= __('main-news_2') %><br />
+							<a href="articles"><%= __('again-button') %></a></p>
+							<div class="hr"></div>
+							<p><strong>14.10.2018</strong><br />
+							<%= __('main-news_3') %><br />
+							<a href="articles"><%= __('again-button') %></a></p>
+						</div>
+						<h3><%= __('Investments') %></h3>
+						<img alt="" src="../images/p1.jpg" /><br /><br />
+						<ul>
+							<li><a href="ukraine"><%= __('Ukraine') %></a></li>
+							<li><a href="belarus"><%= __('Belarus') %></a></li>
+							<li><a href="eu"><%= __('EU') %></a></li>
+						</ul>
+					</div>
+
+					<div class="col-2">
+						<h3><%= __('About') %></h3>
+						<img alt="" class="f-left" src="../images/p2.jpg" />
+						<p><%= __('main-about_1') %></p>
+						<p><%= __('main-about_2') %></p>
+						<p><%= __('main-about_3') %></p>
+						<div class="hr"></div>
+						<h3><%= __('Business') %></h3>
+						<ul>
+							<li><a href="selling-crops"><%= __('Business_1') %></a></li>
+							<li><a href="selling-flour"><%= __('Business_2') %></a></li>
+							<li><a href="selling-other"><%= __('Business_3') %></a></li>
+							<li><a href="purchase"><%= __('Business_4') %></a></li>
+							<li><a href="complexes"><%= __('Business_5') %></a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div></div>
+		<div class="bg-bottom clear">
+			<div class="corner-left png"></div>
+			<div class="corner-right png"></div>
+			<div class="inner png"></div>
+		</div>
+	</div>
+	<!-- /content -->
+	<!-- footer -->
+	<div id="footer">
+    <div class="copy">G.K. Parts Group &copy; 2010-2019</div>
+	</div>
+	<!-- /footer -->
+</div>
+
+<script type="text/javascript">
+var enButton = document.getElementById('en');
+var uaButton = document.getElementById('ua');
+console.log(enButton)
+enButton.addEventListener('click', () => {
+  document.cookie = "lang=en; expires: Fri, 31 Dec 9999 23:59:59 GMT";
+	location.reload();
+})
+
+uaButton.addEventListener('click', () => {
+  document.cookie = "lang=ua; expires: Fri, 31 Dec 9999 23:59:59 GMT";
+	location.reload();
+})
+</script>
+</body>
+</html>
