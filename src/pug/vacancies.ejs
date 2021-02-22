@@ -1,11 +1,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TQZV4ZD');</script>
+<!-- End Google Tag Manager -->
 <link href="../css/index.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="../images/corn.ico" />
+<link rel='icon' type='image/png' href="../images/corn.png" />
+<link rel="alternate" href="https://ukrainefoods.com.ua/vacancies" hreflang="uk" />
+<link rel="alternate" href="https://ukrainefoods.com.ua/vacancies/en" hreflang="en-us" />
+<link rel="alternate" href="https://ukrainefoods.com.ua/vacancies/ua" hreflang="uk" />
+<link rel="canonical" href="https://ukrainefoods.com.ua/vacancies/ua" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="G.K.Parts Group" />
-<meta name="keywords" content="" />
-<title>G.K. Parts Group</title>
+<meta name="description" content="Вакансії в Україні, республіці Білорусь аграрної компанії UkraineFoods GK parts group" />
+<meta name="keywords" content="вакансії аграрної компанії UkraineFoods GK parts group" />
+<title><%= __('vacancies_title') %></title>
 <!--[if lt IE 7]>
 <script type="text/javascript" src="js/ie_png.js"></script>
 <script type="text/javascript">
@@ -14,57 +27,61 @@
 <![endif]-->
 </head>
 <body id="type-1">
-	<div class="lang" style="display: flex; width: 50px; justify-content: space-evenly; position:relative; top: 10px;left: 40px;">
-		<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 18px;" type="button" name="button" id='ua'>ua</button>
-		<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 18px;" type="button" name="button" id='en'>en</button>
-	</div>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src=""https://www.googletagmanager.com/ns.html?id=GTM-TQZV4ZD""
+	height=""0"" width=""0"" style=""display:none;visibility:hidden""></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 <div id="main">
 	<!-- header -->
 	<div id="header">
 		<div class="clear">
-			<a href="/" class="logo"><img alt="Николаевская Аграрная Компания" src="../images/logo.png" style="height: 100px;" /></a>
+			<a href="/" class="logo"><img id="logoPic" alt="Джи Кей Партс Груп" src="../images/logo.png" style="height: 100px;" /></a>
 			<div class="inner">
-				<a href="/">Головна</a> &nbsp;|&nbsp; <a href="contacts">Контакти</a><br />
-				<span>Телефон: + 380 (95) 42 06 484</span>
+				<div class="lang" style="margin-bottom: 6px;">
+					<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 22px;padding: 0;" type="button" name="button" id='ua'>ua</button>
+					<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 22px;padding: 0;margin-left: 5px;" type="button" name="button" id='en'>en</button>
+				</div>
+				<a href="/"><%= __('header_1') %></a> &nbsp;|&nbsp; <a href="/contacts"><%= __('header_2') %></a><br />
+				<span><%= __('header_3') %>: + 380 (44) 227 60 68</span>
 			</div>
 		</div>
-    <div class="menu">
+		<div class="menu">
         <ul>
             <li class="dropdown first-li">
-							<a class="dropbtn" href="/">Головна</a>
+							<a class="dropbtn" href="#"><%= __('header_1') %></a>
 							<div class="dropdown-content">
-                <a href="/">Про нас</a>
-								<a href="projects">Проекти</a>
-								<a href="vacancies">Вакансії</a>
+								<a href="/"><%= __('About') %></a>
+								<a href="/projects"><%= __('Projects') %></a>
+								<a href="/vacancies"><%= __('Vacancies') %></a>
 							</div>
 						</li>
 						<li class="dropdown news">
-							<a class="dropbtn" href="news">Новини</a>
+							<a class="dropbtn" href="#"><%= __('News') %></a>
 							<div class="dropdown-content">
-                <a href="articles">Статті</a>
-								<a href="press">Преса</a>
-								<a href="videos">Відео</a>
+								<a href="/articles"><%= __('Articles') %></a>
+								<a href="/press"><%= __('Press') %></a>
+								<a href="/videos"><%= __('Video') %></a>
 							</div>
 						</li>
 						<li class="dropdown business">
-							<a class="dropbtn" href="business">Діяльність</a>
+							<a class="dropbtn" href="#"><%= __('Business') %></a>
 							<div class="dropdown-content">
-								<a href="selling-crops">Реалізація зернових</a>
-								<a href="selling-flour">Реалізація борошна</a>
-								<a href="selling-other">Реалізація іншої сільськогосподарської продукції</a>
-								<a href="purchase">Закупівля сільськогосподарської продукції</a>
-								<a href="complexes">Проектування та будівництво елеваторних та млинових комплексів</a>
+								<a href="/selling-crops"><%= __('Business_1') %></a>
+								<a href="/selling-flour"><%= __('Business_2') %></a>
+								<a href="/selling-other"><%= __('Business_3') %></a>
+								<a href="/purchase"><%= __('Business_4') %></a>
+								<a href="/complexes"><%= __('Business_5') %></a>
 							</div>
 						</li>
 						<li class="dropdown">
-							<a class="dropbtn" href="investments">Інвестиції</a>
+							<a class="dropbtn" href="#"><%= __('Investments') %></a>
 							<div class="dropdown-content">
-								<a href="ukraine">Україна</a>
-								<a href="belarus">Білорусь</a>
-								<a href="eu">Європейський союз</a>
+								<a href="/ukraine"><%= __('Ukraine') %></a>
+								<a href="/belarus"><%= __('Belarus') %></a>
+								<a href="/eu"><%= __('EU') %></a>
 							</div>
 						</li>
-            <li class="last-li"><a href="contacts">Контакти</a></li>
+            <li class="last-li"><a href="/contacts"><%= __('header_2') %></a></li>
         </ul>
     </div>
 	</div>
@@ -82,46 +99,46 @@
 				<div class="clear vr">
 
 					<div class="col-1">
-						<h3>Новости</h3>
+						<h3><%= __('News') %></h3>
 						<div class="news">
-							<p><strong>18.11.2018р.</strong><br />
-							Закінчено посів ярого ячменю на площі 401,6 га.
-							<a href="articles">Далі</a></p>
+							<p><strong>18.11.2018</strong><br />
+							<%= __('main-news_1') %>
+							<a href="articles"><%= __('again-button') %></a></p>
 							<div class="hr"></div>
-							<p><strong>22.10.2018р.</strong><br />
-							Осіння посівна завершена! Площа посіву ...<br />
-							<a href="articles">Далі</a></p>
+							<p><strong>22.10.2018</strong><br />
+							<%= __('main-news_2') %><br />
+							<a href="articles"><%= __('again-button') %></a></p>
 							<div class="hr"></div>
-							<p><strong>14.10.2018р.</strong><br />
-							Посів озимого ріпаку завершено вже на 75% від запланованих площ.<br />
-							<a href="articles">Далі</a></p>
+							<p><strong>14.10.2018</strong><br />
+							<%= __('main-news_3') %><br />
+							<a href="articles"><%= __('again-button') %></a></p>
 						</div>
-						<h3>Інвестиції</h3>
+						<h3><%= __('Investments') %></h3>
 						<img alt="" src="../images/p1.jpg" /><br /><br />
 						<ul>
-							<li><a href="ukraine">Україна</a></li>
-							<li><a href="belarus">Білорусь</a></li>
-							<li><a href="eu">Європейський союз</a></li>
+							<li><a href="ukraine"><%= __('Ukraine') %></a></li>
+							<li><a href="belarus"><%= __('Belarus') %></a></li>
+							<li><a href="eu"><%= __('EU') %></a></li>
 						</ul>
 					</div>
 
 					<div class="col-2">
-						<h3>Вакансії</h3>
+						<h1><%= __('vacancies_h1') %></h1>
 						<img alt="" class="f-left" src="../images/vacancies.jpg" style="width: 151px;height: 181px;object-fit: cover;" />
             <ul>
-              <li>- Офіс-менеджер, місце роботи, місто Київ, умови договірні.</li>
-  						<li>- Головний зоотехнік, місце роботи Вітебська область, Республіка Білорусь, зп договірна, житлом та транспортом забезпечуємо, досвід роботи з ВРХ.</li>
-  						<li>- Головний ветлікар, місце роботи Вітебська область, Республіка Білорусь, зп договірна, житлом та транспортом забезпечуємо, досвід роботи з ВРХ.</li>
-              <li>- Головний інженер, місце роботи Вітебська область, Республіка Білорусь, зп договірна, житлом та транспортом забезпечуємо, досвід роботи з обладнанням ферм ВРХ, та сільгосптехнікою, та автомобілями.</li>
+              <li>- <%= __('Vacancies_1') %></li>
+  						<li>- <%= __('Vacancies_2') %></li>
+  						<li>- <%= __('Vacancies_3') %></li>
+              <li>- <%= __('Vacancies_4') %></li>
             </ul>
             <div class="hr"></div>
-						<h3>Діяльність</h3>
+						<h3><%= __('Business') %></h3>
 						<ul>
-							<li><a href="selling-crops">Реалізація зернових</a></li>
-							<li><a href="selling-flour">Реалізація борошна</a></li>
-							<li><a href="selling-other">Реалізація іншої сільськогосподарської продукції</a></li>
-							<li><a href="purchase">Закупівля сільськогосподарської продукції</a></li>
-							<li><a href="complexes">Проектування та будівництво елеваторних та млинових комплексів</a></li>
+							<li><a href="selling-crops"><%= __('Business_1') %></a></li>
+							<li><a href="selling-flour"><%= __('Business_2') %></a></li>
+							<li><a href="selling-other"><%= __('Business_3') %></a></li>
+							<li><a href="purchase"><%= __('Business_4') %></a></li>
+							<li><a href="complexes"><%= __('Business_5') %></a></li>
 						</ul>
 					</div>
 
@@ -141,19 +158,18 @@
 	</div>
 	<!-- /footer -->
 </div>
+<script src="../js/script1.js" type="text/javascript"></script>
 <script type="text/javascript">
-var enButton = document.getElementById('en');
-var uaButton = document.getElementById('ua');
-console.log(enButton)
-enButton.addEventListener('click', () => {
-  document.cookie = "lang=en; expires: Fri, 31 Dec 9999 23:59:59 GMT";
-	location.reload();
-})
-
-uaButton.addEventListener('click', () => {
-  document.cookie = "lang=ua; expires: Fri, 31 Dec 9999 23:59:59 GMT";
-	location.reload();
-})
+var desc = document.querySelectorAll('[name="description"]')[0]
+var keywords = document.querySelectorAll('[name="keywords"]')[0]
+console.log(desc)
+if(getCookie('lang') === undefined || getCookie('lang') === 'en') {
+	desc.setAttribute("content", "Вакансії в Україні, республіці Білорусь аграрної компанії UkraineFoods GK parts group");
+	keywords.setAttribute("content", "вакансії аграрної компанії UkraineFoods GK parts group");
+} else {
+	desc.setAttribute("content", "Vacancies in Ukraine, Belarus Republic of agrarian company UkraineFoods GK parts group");
+	keywords.setAttribute("content", "job of agrarian company UkraineFoods GK parts group");
+}
 </script>
 </body>
 </html>

@@ -1,64 +1,83 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TQZV4ZD');</script>
+<!-- End Google Tag Manager -->
 <link href="../css/index.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="../images/corn.ico" />
+<link rel='icon' type='image/png' href="../images/corn.png" />
+<link rel="alternate" href="https://ukrainefoods.com.ua" hreflang="uk" />
+<link rel="alternate" href="https://ukrainefoods.com.ua/en" hreflang="en-us" />
+<link rel="alternate" href="https://ukrainefoods.com.ua/ua" hreflang="uk" />
+<link rel="canonical" href="https://ukrainefoods.com.ua/ua" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="G.K.Parts Group" />
-<meta name="keywords" content="" />
-<title>G.K. Parts Group</title>
+<meta name="keywords" content="аграрна компанія, аграрные компании украины, UkraineFoods, GK parts group" />
+<!-- <meta name="google-site-verification" content="FIkeoPcjGNwqbq0o7aFS2tMI2tqXATeCi7gD8PvlgRk" /> -->
+<meta name="google-site-verification" content="aORcNirPyq8KySZt-GLONZVE_GckOxQ97C3eyNdfIsM" />
+<meta name="description" content="Діяльність в галузі сільського господарства як на території України так і за її межами. UkraineFoods - GK parts group - Ми присутні в 19 областях України." />
+<title><%= __('articles_title') %></title>
 </head>
 <body id="type-1">
-<div class="lang" style="display: flex; width: 50px; justify-content: space-evenly; position:relative; top: 10px;left: 40px;">
-	<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 18px;" type="button" name="button" id='ua'>ua</button>
-	<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 18px;" type="button" name="button" id='en'>en</button>
-</div>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src=""https://www.googletagmanager.com/ns.html?id=GTM-TQZV4ZD""
+	height=""0"" width=""0"" style=""display:none;visibility:hidden""></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 <div id="main">
 	<!-- header -->
 	<div id="header">
 		<div class="clear">
-			<a href="/" class="logo"><img alt="Николаевская Аграрная Компания" src="../images/logo.png" style="height: 100px;" /></a>
+			<a href="/" class="logo"><img id="logoPic" alt="Джи Кей Партс Груп" src="../images/logo.png" style="height: 100px;" /></a>
 			<div class="inner">
-				<a href="/"><%= __('header_1') %></a> &nbsp;|&nbsp; <a href="contacts"><%= __('header_2') %></a><br />
-				<span><%= __('header_3') %>: + 380 (95) 42 06 484</span>
+				<div class="lang" style="margin-bottom: 6px;">
+					<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 22px;padding: 0;" type="button" name="button" id='ua'>ua</button>
+					<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 22px;padding: 0;margin-left: 5px;" type="button" name="button" id='en'>en</button>
+				</div>
+				<a href="/"><%= __('header_1') %></a> &nbsp;|&nbsp; <a href="/contacts"><%= __('header_2') %></a><br />
+				<span><%= __('header_3') %>: + 380 (44) 227 60 68</span>
 			</div>
 		</div>
-    <div class="menu">
+		<div class="menu">
         <ul>
             <li class="dropdown first-li">
-							<a class="dropbtn" href="/"><%= __('header_1') %></a>
+							<a class="dropbtn" href="#"><%= __('header_1') %></a>
 							<div class="dropdown-content">
 								<a href="/"><%= __('About') %></a>
-								<a href="projects"><%= __('Projects') %></a>
-								<a href="vacancies"><%= __('Vacancies') %></a>
+								<a href="/projects"><%= __('Projects') %></a>
+								<a href="/vacancies"><%= __('Vacancies') %></a>
 							</div>
 						</li>
 						<li class="dropdown news">
-							<a class="dropbtn" href="news"><%= __('News') %></a>
+							<a class="dropbtn" href="#"><%= __('News') %></a>
 							<div class="dropdown-content">
-								<a href="articles"><%= __('Articles') %></a>
-								<a href="press"><%= __('Press') %></a>
-								<a href="videos"><%= __('Video') %></a>
+								<a href="/articles"><%= __('Articles') %></a>
+								<a href="/press"><%= __('Press') %></a>
+								<a href="/videos"><%= __('Video') %></a>
 							</div>
 						</li>
 						<li class="dropdown business">
-							<a class="dropbtn" href="business"><%= __('Business') %></a>
+							<a class="dropbtn" href="#"><%= __('Business') %></a>
 							<div class="dropdown-content">
-								<a href="selling-crops"><%= __('Business_1') %></a>
-								<a href="selling-flour"><%= __('Business_2') %></a>
-								<a href="selling-other"><%= __('Business_3') %></a>
-								<a href="purchase"><%= __('Business_4') %></a>
-								<a href="complexes"><%= __('Business_5') %></a>
+								<a href="/selling-crops"><%= __('Business_1') %></a>
+								<a href="/selling-flour"><%= __('Business_2') %></a>
+								<a href="/selling-other"><%= __('Business_3') %></a>
+								<a href="/purchase"><%= __('Business_4') %></a>
+								<a href="/complexes"><%= __('Business_5') %></a>
 							</div>
 						</li>
 						<li class="dropdown">
-							<a class="dropbtn" href="investments"><%= __('Investments') %></a>
+							<a class="dropbtn" href="#"><%= __('Investments') %></a>
 							<div class="dropdown-content">
-								<a href="ukraine"><%= __('Ukraine') %></a>
-								<a href="belarus"><%= __('Belarus') %></a>
-								<a href="eu"><%= __('EU') %></a>
+								<a href="/ukraine"><%= __('Ukraine') %></a>
+								<a href="/belarus"><%= __('Belarus') %></a>
+								<a href="/eu"><%= __('EU') %></a>
 							</div>
 						</li>
-            <li class="last-li"><a href="contacts"><%= __('header_2') %></a></li>
+            <li class="last-li"><a href="/contacts"><%= __('header_2') %></a></li>
         </ul>
     </div>
 	</div>
@@ -100,7 +119,7 @@
 					</div>
 
 					<div class="col-2">
-						<h3><%= __('About') %></h3>
+						<h1><%= __('articles_h1') %></h1>
 						<img alt="" class="f-left" src="../images/p2.jpg" />
 						<p><%= __('main-about_1') %></p>
 						<p><%= __('main-about_2') %></p>
@@ -133,19 +152,18 @@
 	<!-- /footer -->
 </div>
 
+<script src="../js/script1.js" type="text/javascript"></script>
 <script type="text/javascript">
-var enButton = document.getElementById('en');
-var uaButton = document.getElementById('ua');
-console.log(enButton)
-enButton.addEventListener('click', () => {
-  document.cookie = "lang=en; expires: Fri, 31 Dec 9999 23:59:59 GMT";
-	location.reload();
-})
-
-uaButton.addEventListener('click', () => {
-  document.cookie = "lang=ua; expires: Fri, 31 Dec 9999 23:59:59 GMT";
-	location.reload();
-})
+var desc = document.querySelectorAll('[name="description"]')[0]
+var keywords = document.querySelectorAll('[name="keywords"]')[0]
+console.log(desc)
+if(getCookie('lang') === undefined || getCookie('lang') === 'en') {
+	desc.setAttribute("content", "Діяльність в галузі сільського господарства як на території України так і за її межами. UkraineFoods - GK parts group - Ми присутні в 19 областях України.");
+	keywords.setAttribute("content", "аграрна компанія, аграрные компании украины, UkraineFoods, GK parts group");
+} else {
+	desc.setAttribute("content", "Activity in the field of agriculture both on the territory of Ukraine and abroad. UkraineFoods - GK parts group - We are present in 19 regions of Ukraine.");
+	keywords.setAttribute("content", "agrarian company, agrarian companies of Ukraine, UkraineFoods, GK parts group");
+}
 </script>
 </body>
 </html>

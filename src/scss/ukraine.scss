@@ -6,6 +6,11 @@ body {
 	font-size:62.5%; /* ~10px */
 }
 
+h1 {
+	margin-top: 0;
+  line-height: 1.5em;
+}
+
 .menu {
   background: url(../img/menu-bg.gif) repeat-x left top;
   border-radius: 12px;
@@ -96,25 +101,10 @@ body {
 		.dropdown-content a:hover {background-color: #ddd;}
 
 		/* Show the dropdown menu on hover */
-		.dropdown:hover .dropdown-content {display: block;}
+		.dropdown:hover .dropdown-content {display: block;top: 45px;}
 
 		/* Change the background color of the dropdown button when the dropdown content is shown */
-		.dropdown:hover .dropbtn {background-color: #3e8e41;}
-}
-
-.first-li {
-
-	.dropbtn {
-		border-radius: 12px 0 0 0;
-	}
-
-	.dropdown-content {
-		border-radius: 12px 0 0 0;
-
-		a:first-child {
-			border-radius: 12px 0 0 0;
-		}
-	}
+		.dropdown:hover .dropbtn {background: url(../images/menu-bg-active.gif) repeat-x left top;}
 }
 
 body, input, select, textarea, td, th {
@@ -170,13 +160,13 @@ ul {
 
 
 #header {
-	height:221px;
+	height:240px;
 }
 
 #header .inner {
 	color:#fff;
 	font-size:1.3em;
-	height:53px;
+	height:75px;
 	padding:108px 5px 0 0;
 	text-align:right;
 }

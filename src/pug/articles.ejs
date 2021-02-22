@@ -1,11 +1,24 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TQZV4ZD');</script>
+<!-- End Google Tag Manager -->
 <link href="../css/articles.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="../images/corn.ico" />
+<link rel='icon' type='image/png' href="../images/corn.png" />
+<link rel="alternate" href="https://ukrainefoods.com.ua/articles" hreflang="uk" />
+<link rel="alternate" href="https://ukrainefoods.com.ua/articles/en" hreflang="en-us" />
+<link rel="alternate" href="https://ukrainefoods.com.ua/articles/ua" hreflang="uk" />
+<link rel="canonical" href="https://ukrainefoods.com.ua/articles/ua" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="description" content="Последние новости Николаевской аграрной компании – украинского производителя сельскохозяйственной продукции." />
-<meta name="keywords" content="" />
-<title>G.K. Parts Group</title>
+<meta name="description" content="Новини сільського господарства України, новини агроринку, новини АПК - компанія UkraineFoods  - GK parts group - Ми ведемо агро бізнес у 19 областях України." />
+<meta name="keywords" content="новости агрорынка, новости сельского хозяйства Украины,  новости апк, агро новини, новини аграрного бізнесу" />
+<title><%= __('articles_title') %></title>
 <!--[if lt IE 7]>
 <script type="text/javascript" src="js/ie_png.js"></script>
 <script type="text/javascript">
@@ -14,59 +27,63 @@
 <![endif]-->
 </head>
 <body>
-	<div class="lang" style="display: flex; width: 50px; justify-content: space-evenly; position:relative; top: 10px;left: 40px;">
-		<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 18px;" type="button" name="button" id='ua'>ua</button>
-		<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 18px;" type="button" name="button" id='en'>en</button>
-	</div>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src=""https://www.googletagmanager.com/ns.html?id=GTM-TQZV4ZD""
+	height=""0"" width=""0"" style=""display:none;visibility:hidden""></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 <div id="main">
 	<!-- header -->
 	<div id="header">
 		<div class="clear">
-			<a href="/" class="logo"><img alt="Николаевская Аграрная Компания" src="../images/logo.png" style="height: 100px;" /></a>
+			<a href="/" class="logo"><img id="logoPic" alt="Джи Кей Партс Груп" src="../images/logo.png" style="height: 100px;" /></a>
 			<div class="inner">
-				<a href="/">Головна</a> &nbsp;|&nbsp; <a href="contacts">Контакти</a><br />
-				<span>Телефон: + 380 (95) 42 06 484</span>
+				<div class="lang" style="margin-bottom: 6px;">
+					<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 22px;padding: 0;" type="button" name="button" id='ua'>ua</button>
+					<button style="background: none;border: none;color: white;text-decoration: underline;cursor: pointer;opacity: 0.7;font-size: 22px;padding: 0;margin-left: 5px;" type="button" name="button" id='en'>en</button>
+				</div>
+				<a href="/"><%= __('header_1') %></a> &nbsp;|&nbsp; <a href="/contacts"><%= __('header_2') %></a><br />
+				<span><%= __('header_3') %>: + 380 (44) 227 60 68</span>
 			</div>
 		</div>
 		<div class="menu">
-				<ul>
-						<li class="dropdown first-li">
-							<a class="dropbtn" href="/">Головна</a>
+        <ul>
+            <li class="dropdown first-li">
+							<a class="dropbtn" href="#"><%= __('header_1') %></a>
 							<div class="dropdown-content">
-								<a href="/">Про нас</a>
-								<a href="projects">Проекти</a>
-								<a href="vacancies">Вакансії</a>
+								<a href="/"><%= __('About') %></a>
+								<a href="/projects"><%= __('Projects') %></a>
+								<a href="/vacancies"><%= __('Vacancies') %></a>
 							</div>
 						</li>
 						<li class="dropdown news">
-							<a class="dropbtn" href="news">Новини</a>
+							<a class="dropbtn" href="#"><%= __('News') %></a>
 							<div class="dropdown-content">
-								<a href="articles">Статті</a>
-								<a href="press">Преса</a>
-								<a href="videos">Відео</a>
+								<a href="/articles"><%= __('Articles') %></a>
+								<a href="/press"><%= __('Press') %></a>
+								<a href="/videos"><%= __('Video') %></a>
 							</div>
 						</li>
 						<li class="dropdown business">
-							<a class="dropbtn" href="business">Діяльність</a>
+							<a class="dropbtn" href="#"><%= __('Business') %></a>
 							<div class="dropdown-content">
-								<a href="selling-crops">Реалізація зернових</a>
-								<a href="selling-flour">Реалізація борошна</a>
-								<a href="selling-other">Реалізація іншої сільськогосподарської продукції</a>
-								<a href="purchase">Закупівля сільськогосподарської продукції</a>
-								<a href="complexes">Проектування та будівництво елеваторних та млинових комплексів</a>
+								<a href="/selling-crops"><%= __('Business_1') %></a>
+								<a href="/selling-flour"><%= __('Business_2') %></a>
+								<a href="/selling-other"><%= __('Business_3') %></a>
+								<a href="/purchase"><%= __('Business_4') %></a>
+								<a href="/complexes"><%= __('Business_5') %></a>
 							</div>
 						</li>
 						<li class="dropdown">
-							<a class="dropbtn" href="investments">Інвестиції</a>
+							<a class="dropbtn" href="#"><%= __('Investments') %></a>
 							<div class="dropdown-content">
-								<a href="ukraine">Україна</a>
-								<a href="belarus">Білорусь</a>
-								<a href="eu">Європейський союз</a>
+								<a href="/ukraine"><%= __('Ukraine') %></a>
+								<a href="/belarus"><%= __('Belarus') %></a>
+								<a href="/eu"><%= __('EU') %></a>
 							</div>
 						</li>
-						<li class="last-li"><a href="contacts">Контакти</a></li>
-				</ul>
-		</div>
+            <li class="last-li"><a href="/contacts"><%= __('header_2') %></a></li>
+        </ul>
+    </div>
 	</div>
 	<!-- /header -->
 	<!-- content -->
@@ -80,166 +97,421 @@
 			<div class="inner">
 
 				<div class="main-pic"><img alt="" src="../img/fon4.jpg" /></div>
-				<h3>Статті</h3>
+				<h1><%= __('articles_h1') %></h1>
 				<div class="news">
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">18.11.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Шановні колеги! </font><font style="vertical-align: inherit;">Колектив Миколаївської аграрної компанії вітає Вас з Днем працівника сільського господарства! </font><font style="vertical-align: inherit;">Бажаємо всім хороших сходів і своєчасних опадів!</font></font></p>
+					<p><strong>11.01.2020 </strong><br>
+					<%= __('Articles_124') %></p>
+					<a href="https://propozitsiya.com/ua/nazvano-cinu-na-zemli-v-razi-vidkryttya-rynku-v-lypni-2021-roku">https://propozitsiya.com/ua/nazvano-cinu-na-zemli-v-razi-vidkryttya-rynku-v-lypni-2021-roku</a><br>
+					<img src="../images/articles94.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">22.10.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Осіння посівна завершена! </font><font style="vertical-align: inherit;">Площа посіву озимого ячменю склала 594,3 га.</font></font></p>
+					<p><strong>08.12.2020 </strong><br>
+					<%= __('Articles_121') %></p>
+					<a href="https://propozitsiya.com/ua/aktyvnyy-eksport-pidtrymuye-ciny-na-sonyashnyk-na-vysokomu-rivni">https://propozitsiya.com/ua/aktyvnyy-eksport-pidtrymuye-ciny-na-sonyashnyk-na-vysokomu-rivni</a><br>
+					<img src="../images/articles91.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">14.10.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					У всіх підрозділах Миколаївської аграрної компанії триває підготовка ґрунту під ярі культури, а саме: дискування під ярий ячмінь, оранка і глубокорихленіе під соняшник і пізні ярі культури.</font></font></p>
+					<p><strong>02.12.2020 </strong><br>
+					<%= __('Articles_122') %></p>
+					<a href="https://propozitsiya.com/ua/vcheni-zrobyly-seryoznyy-krok-do-vyvedennya-novyh-vysokovrozhaynyh-sortiv-pshenyci-ta-yachmenyu">https://propozitsiya.com/ua/vcheni-zrobyly-seryoznyy-krok-do-vyvedennya-novyh-vysokovrozhaynyh-sortiv-pshenyci-ta-yachmenyu</a><br>
+					<img src="../images/articles92.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">07.10.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Агрономічна служба компанії повідомляє, що станом на 6 жовтня: </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					- повністю посіяна озима пшениця на запланованій площі 3638,2 га; </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					- триває посів озимого ячменю, який планується завершити до 15 жовтня; </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					- на всій площі посіву озимого ріпаку отримано сходи. </font><font style="vertical-align: inherit;">Озимий ріпак оброблений проти шкідників; </font><font style="vertical-align: inherit;">найближчим часом буде проведена листкове підживлення сходів.</font></font></p>
+					<p><strong>11.12.2020 </strong><br>
+					<%= __('Articles_123') %></p>
+					<a href="https://propozitsiya.com/ua/ievropa-bachit-za-ukrayinoyu-velikiy-potencial-u-virobnictvi-soyi-shcho-vidpovidaie-standartam">https://propozitsiya.com/ua/ievropa-bachit-za-ukrayinoyu-velikiy-potencial-u-virobnictvi-soyi-shcho-vidpovidaie-standartam</a><br>
+					<img src="../images/articles93.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">23.09.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Завершено збирання соняшнику! </font><font style="vertical-align: inherit;">Середня врожайність соняшнику по компанії склала 20,0 ц / га.</font></font></p>
+					<p><strong>24.12.2020 </strong><br>
+					<%= __('Articles_124') %></p>
+					<a href="https://propozitsiya.com/ceny-na-podsolnechnik-v-ukraine-prevysili-20000-grnt-chto-aktiviziruet-prodazhi">https://propozitsiya.com/ceny-na-podsolnechnik-v-ukraine-prevysili-20000-grnt-chto-aktiviziruet-prodazhi</a><br>
+					<img src="../images/articles91.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">16.09.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Агрономічна служба компанії повідомляє, що через несприятливі для сівби озимого ріпаку погодних умов, озимий ріпак посіяно лише на полях, де була проведена влагозарядка грунту. </font><font style="vertical-align: inherit;">Площа посіву склала 180 га. </font><font style="vertical-align: inherit;">Одночасно, в план сівозміни компанії на 2019-2012 роки внесено зміни щодо збільшення площ посівів озимої пшениці та озимого ячменю.</font></font></p>
+					<p><strong>20.11.2020 </strong><br>
+					<%= __('Articles_120') %></p>
+					<a href="https://propozitsiya.com/ua/ievropa-bachit-za-ukrayinoyu-velikiy-potencial-u-virobnictvi-soyi-shcho-vidpovidaie-standartam">https://propozitsiya.com/ua/ievropa-bachit-za-ukrayinoyu-velikiy-potencial-u-virobnictvi-soyi-shcho-vidpovidaie-standartam</a><br>
+					<img src="../images/articles89.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">05.09.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Збір врожаю соняшника йде у всіх підрозділах Миколаївської аграрної компанії.</font></font></p>
+					<p><strong>05.11.2020 </strong><br>
+					<%= __('Articles_119') %></p>
+					<a href="https://propozitsiya.com/ua/sytuaciya-na-rynku-zernovyh-v-ukrayini-zagrozhuye-prodovolchiy-bezpeci-krayiny">https://propozitsiya.com/ua/sytuaciya-na-rynku-zernovyh-v-ukrayini-zagrozhuye-prodovolchiy-bezpeci-krayiny</a><br>
+					<img src="../images/articles88.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">01.09.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Розпочато посів озимого ріпаку на полях, де була проведена влагозарядка грунту.</font></font></p>
+					<p><strong>23.10.2020 </strong><br>
+					<%= __('Articles_117') %></p>
+					<a href="https://propozitsiya.com/ua/agrariyi-vinnychchyny-zavershuyut-zbyrannya-sonyashnyku">https://propozitsiya.com/ua/agrariyi-vinnychchyny-zavershuyut-zbyrannya-sonyashnyku</a><br>
+					<img src="../images/articles85.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">26.08.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					У Снігурівському відділенні Миколаївської аграрної компанії розпочато збирання соняшнику!</font></font></p>
+					<p><strong>15.11.2020 </strong><br>
+					<%= __('Articles_118') %></p>
+					<!-- <a href="https://propozitsiya.com/ua/agrariyi-vinnychchyny-zavershuyut-zbyrannya-sonyashnyku">https://propozitsiya.com/ua/agrariyi-vinnychchyny-zavershuyut-zbyrannya-sonyashnyku</a><br> -->
+					<img src="../images/articles87.jpeg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15.08.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Увага! </font><font style="vertical-align: inherit;">На сторінці Продукція розміщена інформація про кількість і показниках якості пшениці врожаю 2019 року, пропонованої на продаж.</font></font></p>
+					<p><strong>23.10.2020 </strong><br>
+					<%= __('Articles_117') %></p>
+					<a href="https://propozitsiya.com/ua/agrariyi-vinnychchyny-zavershuyut-zbyrannya-sonyashnyku">https://propozitsiya.com/ua/agrariyi-vinnychchyny-zavershuyut-zbyrannya-sonyashnyku</a><br>
+					<img src="../images/articles85.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">29.07.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					У всіх підрозділах Миколаївської аграрної компанії повним ходом йде підготовка ріллі під посів озимих майбутнього врожаю.</font></font></p>
+					<p><strong>22.10.2020 </strong><br>
+					<%= __('Articles_116') %></p>
+					<a href="https://propozitsiya.com/ua/uryad-shvalyv-postanovu-shchodo-zaprovadzhennya-v-ukrayini-vlasnoyi-systemy-sertyfikaciyi">https://propozitsiya.com/ua/uryad-shvalyv-postanovu-shchodo-zaprovadzhennya-v-ukrayini-vlasnoyi-systemy-sertyfikaciyi</a><br>
+					<img src="../images/articles86.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">25.07.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Прибирання закінчена!</font></font></p>
+					<p><strong>07.10.2020 </strong><br>
+					<%= __('Articles_114') %></p>
+					<a href="https://propozitsiya.com/v-bolshinstve-oblastey-ukrainy-prekratilas-vozdushno-pochvennaya-zasuha-ukrgidrometeocentr">https://propozitsiya.com/v-bolshinstve-oblastey-ukrainy-prekratilas-vozdushno-pochvennaya-zasuha-ukrgidrometeocentr</a><br>
+					<img src="../images/articles83.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13.07.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Збирання озимого ріпаку та ярого ячменю завершено!</font></font></p>
+					<p><strong>13.10.2020 </strong><br>
+					<%= __('Articles_115') %></p>
+					<a href="https://propozitsiya.com/ukrainskaya-zernovaya-associaciya-snizila-prognoz-urozhaya">https://propozitsiya.com/ukrainskaya-zernovaya-associaciya-snizila-prognoz-urozhaya</a><br>
+					<img src="../images/articles84.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">02.07.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					У всіх підрозділах Миколаївської аграрної компанії почалося збирання озимого ріпаку!</font></font></p>
+					<p><strong>24.09.2020 </strong><br>
+					<%= __('Articles_113') %></p>
+					<a href="https://latifundist.com/novosti/52069-v-ukraine-ponizhen-urozhaj-pshenitsy-i-yachmenya--urozhaj-onlajn-2020">https://latifundist.com/novosti/52069-v-ukraine-ponizhen-urozhaj-pshenitsy-i-yachmenya--urozhaj-onlajn-2020</a><br>
+					<img src="../images/articles82.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">29.06.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Завершено збирання озимого ячменю!</font></font></p>
+					<p><strong>15.09.2020 </strong><br>
+					<%= __('Articles_112') %></p>
+					<a href="https://propozitsiya.com/zhatva-2020-v-ukraine-nachat-sbor-kukuruzy">https://propozitsiya.com/zhatva-2020-v-ukraine-nachat-sbor-kukuruzy</a><br>
+					<img src="../images/articles81.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">25.05.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Агрономічна служба компанії повідомляє, що станом на 25 травня: </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					- закінчена друга хімічна обробка озимих і ярих зернових проти комплексу хвороб і шкідників, зокрема, проти дорослої особини клопа-черепашки; </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					- на всій площі посіву соняшника отримані повноцінні сходи; </font><font style="vertical-align: inherit;">повним ходом йде міжрядний обробіток, яка була розпочата 17 травня; </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					- почалася основна обробка грунту під чорні пари, яку планується закінчити через два тижні.</font></font></p>
+					<p><strong>07.09.2020 </strong><br>
+					<%= __('Articles_111') %></p>
+					<a href="https://propozitsiya.com/dolya-kislyh-pochv-v-ukraine-dostigla-19">https://propozitsiya.com/dolya-kislyh-pochv-v-ukraine-dostigla-19</a><br>
+					<img src="../images/articles80.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">18.05.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Закінчено посів соняшнику! </font><font style="vertical-align: inherit;">Площа посіву становив 1456 га.</font></font></p>
+					<p><strong>25.08.2020 </strong><br>
+					<%= __('Articles_110') %></p>
+					<a href="https://propozitsiya.com/poteri-urozhaya-kukuruzy-v-ukraine-v-tg-mogut-dostignut-30-naan">https://propozitsiya.com/poteri-urozhaya-kukuruzy-v-ukraine-v-tg-mogut-dostignut-30-naan</a><br>
+					<img src="../images/articles79.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">29.04.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Посів соняшнику завершено вже на 50% від запланованих площ. </font><font style="vertical-align: inherit;">Також, по всіх господарствах закінчується обприскування посівів озимого ріпаку від комплексу шкідників і хвороб з одночасною підгодівлею мікроелементами.</font></font></p>
+					<p><strong>17.08.2020 </strong><br>
+					<%= __('Articles_108') %></p>
+					<a href="https://propozitsiya.com/v-ukraine-uzhe-sobrali-367-milliona-tonn-zerna">https://propozitsiya.com/v-ukraine-uzhe-sobrali-367-milliona-tonn-zerna</a><br>
+					<img src="../images/articles77.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">22.04.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					У всіх підрозділах Миколаївської аграрної компанії розпочато посів соняшнику.</font></font></p>
+					<p><strong>07.08.2020 </strong><br>
+					<%= __('Articles_109') %></p>
+					<a href="https://propozitsiya.com/zakupivelni-cini-na-ukrayinsku-pshenicyu-rizko-znizilisya">https://propozitsiya.com/zakupivelni-cini-na-ukrayinsku-pshenicyu-rizko-znizilisya</a><br>
+					<img src="../images/articles78.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">19.04.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Завершена підживлення озимих зернових культур карбамідом за методом Бузницького (сівалками, прикореневим способом).</font></font></p>
+					<p><strong>27.07.2020 </strong><br>
+					<%= __('Articles_107') %></p>
+					<a href="https://propozitsiya.com/ukrainskie-agrarii-sobrali-bolee-20-millionov-tonn-zerna-novogo-urozhaya">https://propozitsiya.com/ukrainskie-agrarii-sobrali-bolee-20-millionov-tonn-zerna-novogo-urozhaya</a><br>
+					<img src="../images/articles76.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">05.04.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Моніторинг стану озимих культур, проведений агрономічної службою компанії після виходу із зимівлі, показав наступне. </font><font style="vertical-align: inherit;">Сходи озимої пшениці та озимого ячменю на всій площі посіву знаходяться в хорошому стані. </font><font style="vertical-align: inherit;">Сходи озимого ріпаку на площі 782 га знаходяться в хорошому стані, а на площі 247 га - в задовільному стані.</font></font></p>
+					<p><strong>06.07.2020 </strong><br>
+					<%= __('Articles_105') %></p>
+					<a href="https://latifundist.com/novosti/50887-ukrainskie-agrarii-namolotili-245-tys-t-ozimoj-pshenitsy--urozhaj-onlajn-2020">https://latifundist.com/novosti/50887-ukrainskie-agrarii-namolotili-245-tys-t-ozimoj-pshenitsy--urozhaj-onlajn-2020</a><br>
+					<img src="../images/articles74.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">25.03.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Закінчено посів ярого ячменю на площі 293 га.</font></font></p>
+					<p><strong>14.07.2020 </strong><br>
+					<%= __('Articles_106') %></p>
+					<a href="https://propozitsiya.com/tempy-eksporta-ukrainskogo-zerna-v-nachale-tekushchego-sezona-ustupayut-proshlogodnim-bolee-chem-v">https://propozitsiya.com/tempy-eksporta-ukrainskogo-zerna-v-nachale-tekushchego-sezona-ustupayut-proshlogodnim-bolee-chem-v</a><br>
+					<img src="../images/articles75.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">18.02.2019 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Проведено підживлення озимого ріпаку аміачною селітрою по мерзлоталому грунті.</font></font></p>
+					<p><strong>19.06.2020 </strong><br>
+					<%= __('Articles_103') %></p>
+					<a href="https://propozitsiya.com/pozdravlyaem-s-dnem-fermera">https://propozitsiya.com/pozdravlyaem-s-dnem-fermera</a><br>
+					<img src="../images/articles72.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">30.12.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Колектив Миколаївської аграрної компанії вітає всіх з наступаючим Новим роком! </font><font style="vertical-align: inherit;">Нехай в Новому році збудеться не менш половини Ваших планів і надій! </font><font style="vertical-align: inherit;">:-)</font></font></p>
+					<p><strong>26.06.2020 </strong><br>
+					<%= __('Articles_104') %></p>
+					<a href="https://propozitsiya.com/zakupochnye-ceny-na-pshenicu-novogo-urozhaya-v-ukraine-opuskayutsya">https://propozitsiya.com/zakupochnye-ceny-na-pshenicu-novogo-urozhaya-v-ukraine-opuskayutsya</a><br>
+					<img src="../images/articles73.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">01.12.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					У всіх підрозділах Миколаївської аграрної компанії завершені сільськогосподарські роботи згідно з планом виробництва осінніх польових робіт.</font></font></p>
+					<p><strong>11.06.2020 </strong><br>
+					<%= __('Articles_101') %></p>
+					<a href="https://propozitsiya.com/pogodnye-faktory-prodolzhayut-opuskat-ceny-na-pshenicu">https://propozitsiya.com/pogodnye-faktory-prodolzhayut-opuskat-ceny-na-pshenicu</a><br>
+					<img src="../images/articles70.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">19.11.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Шановні колеги! </font><font style="vertical-align: inherit;">Колектив Миколаївської аграрної компанії вітає Вас з Днем працівника сільського господарства! </font><font style="vertical-align: inherit;">Бажаємо Вам здоров'я, терпіння, трішечки удачі і, особливо, хочемо Вам побажати зберігати надію на краще!</font></font></p>
+					<p><strong>02.06.2020 </strong><br>
+					<%= __('Articles_102') %></p>
+					<a href="https://propozitsiya.com/ukraina-eksportirovala-agroprodukcii-na-75-mlrd">https://propozitsiya.com/ukraina-eksportirovala-agroprodukcii-na-75-mlrd</a><br>
+					<img src="../images/articles71.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">09.11.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					6-8 листопада був проведений моніторинг стану посівів, який показав наступне. </font><font style="vertical-align: inherit;">На всій площі отримано сходи озимої пшениці (фаза 2-3 листків), з'являються сходи озимого ячменю (фаза 1-3 листків). </font><font style="vertical-align: inherit;">Озимий ріпак на більшості площ знаходиться в фазі 4-5 листків (80% площі), на решті площі - в фазі 2-3 листків. </font><font style="vertical-align: inherit;">За всіма господарствам вироблено обприскування озимого ріпаку від комплексу шкідників і хвороб; </font><font style="vertical-align: inherit;">одночасно проводилася підгодівля мікроелементами. </font><font style="vertical-align: inherit;">Посіви пшениці, посіяні по стерньових попередниках, оброблені інсектицидом проти хлібної жужелиці.</font></font></p>
+					<p><strong>25.05.2020 </strong><br>
+					<%= __('Articles_98') %></p>
+					<a href="https://propozitsiya.com/shmygal-zayavlyaet-chto-v-ukraine-mozhet-poyavitsya-otdelnoe-agrarnoe-ministerstvo">https://propozitsiya.com/shmygal-zayavlyaet-chto-v-ukraine-mozhet-poyavitsya-otdelnoe-agrarnoe-ministerstvo</a><br>
+					<img src="../images/articles67.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">30.10.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					На сторінці Продукція актуалізована інформація про пшеницю врожаю 2018 року, пропонованої на продаж.</font></font></p>
+					<p><strong>22.05.2020 </strong><br>
+					<%= __('Articles_99') %></p>
+					<a href="https://propozitsiya.com/agrarii-zaseyali-yarovymi-zernovymi-96-prognoziruemyh-ploshchadey">https://propozitsiya.com/agrarii-zaseyali-yarovymi-zernovymi-96-prognoziruemyh-ploshchadey</a><br>
+					<img src="../images/articles68.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">16.10.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Осіння посівна кампанія завершена у всіх підрозділах Миколаївської аграрної компанії! </font><font style="vertical-align: inherit;">Площа посіву озимого ячменю склала 354 га.</font></font></p>
+					<p><strong>18.05.2020 </strong><br>
+					<%= __('Articles_100') %></p>
+					<a href="https://propozitsiya.com/v-ukraine-poteri-urozhaya-iz-za-pogodnyh-usloviy-ozhidayutsya-na-358-tysyachah-ga-eksperty">https://propozitsiya.com/v-ukraine-poteri-urozhaya-iz-za-pogodnyh-usloviy-ozhidayutsya-na-358-tysyachah-ga-eksperty</a><br>
+					<img src="../images/articles69.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15.10.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Увага! </font><font style="vertical-align: inherit;">На сторінці Інвесторам опубліковані дані про врожайність і валовий збір сільськогосподарських культур у 2018 році. </font><font style="vertical-align: inherit;">Слід зазначити, що збирання ранніх зернових в поточному році відбувалася в дуже складних метеорологічних умовах: майже безперервні грозові дощі, іноді з градом. </font><font style="vertical-align: inherit;">Внаслідок цього втрати врожаю ячменю склали не менше 30%, пшениці - не менше 25%. </font><font style="vertical-align: inherit;">Крім того, урожай ріпаку на 223 га був повністю знищений градом, про що Торгово-Промисловою Палатою України було видано відповідний висновок.</font></font></p>
+					<p><strong>09.05.2020 </strong><br>
+					<%= __('Articles_94') %></p>
+					<!-- <a href="https://propozitsiya.com/zasuha-i-vliyanie-pandemii-ukraina-v-2020-godu-ne-doschitaetsya-ot-5-do-10-mln-t-urozhaya-zernovyh">https://propozitsiya.com/zasuha-i-vliyanie-pandemii-ukraina-v-2020-godu-ne-doschitaetsya-ot-5-do-10-mln-t-urozhaya-zernovyh</a><br> -->
+					<img src="../images/articles63.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">08.10.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Озима пшениця посіяна відповідно до плану сівозміни! </font><font style="vertical-align: inherit;">Площа посіву склала 3131 га. </font><font style="vertical-align: inherit;">Розпочато посів озимого ячменю.</font></font></p>
+					<p><strong>13.05.2020 </strong><br>
+					<%= __('Articles_95') %></p>
+					<a href="https://propozitsiya.com/premer-rasskazal-na-skolko-ukraine-hvatit-zapasov-pshenicy">https://propozitsiya.com/premer-rasskazal-na-skolko-ukraine-hvatit-zapasov-pshenicy</a><br>
+					<img src="../images/articles64.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">26.09.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Завершено збирання соняшнику! </font><font style="vertical-align: inherit;">Середня врожайність соняшнику по компанії склала 22,8 ц / га.</font></font></p>
+					<p><strong>06.05.2020 </strong><br>
+					<%= __('Articles_96') %></p>
+					<a href="https://propozitsiya.com/ukraina-zavershila-sev-rannih-yarovyh-na-ploshchadi-112-mln-ga">https://propozitsiya.com/ukraina-zavershila-sev-rannih-yarovyh-na-ploshchadi-112-mln-ga</a><br>
+					<img src="../images/articles65.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15.09.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Розпочато посів озимої пшениці в усіх підрозділах Миколаївської аграрної компанії.</font></font></p>
+					<p><strong>04.05.2020 </strong><br>
+					<%= __('Articles_97') %></p>
+					<a href="https://propozitsiya.com/v-ukraine-hotyat-strahovat-agrariev-ot-cenovyh-kolebaniy">https://propozitsiya.com/v-ukraine-hotyat-strahovat-agrariev-ot-cenovyh-kolebaniy</a><br>
+					<img src="../images/articles66.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11.09.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Завершено посів озимого ріпаку! </font><font style="vertical-align: inherit;">Площа посіву склала 1029 га.</font></font></p>
+					<p><strong>27.04.2020 </strong><br>
+					<%= __('Articles_92') %></p>
+					<a href="https://propozitsiya.com/zasuha-i-vliyanie-pandemii-ukraina-v-2020-godu-ne-doschitaetsya-ot-5-do-10-mln-t-urozhaya-zernovyh">https://propozitsiya.com/zasuha-i-vliyanie-pandemii-ukraina-v-2020-godu-ne-doschitaetsya-ot-5-do-10-mln-t-urozhaya-zernovyh</a><br>
+					<img src="../images/articles61.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">09.09.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					У всіх підрозділах Миколаївської аграрної компанії йде збирання соняшнику.</font></font></p>
+					<p><strong>25.04.2020 </strong><br>
+					<%= __('Articles_93') %></p>
+					<a href="https://propozitsiya.com/v-seredine-aprelya-v-ukraine-nablyudalsya-kompleks-neblagopriyatnyh-i-opasnyh-pogodnyh-yavleniy">https://propozitsiya.com/v-seredine-aprelya-v-ukraine-nablyudalsya-kompleks-neblagopriyatnyh-i-opasnyh-pogodnyh-yavleniy</a><br>
+					<img src="../images/articles62.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">06.09.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Посів озимого ріпаку завершено вже на 75% від запланованих площ.</font></font></p>
+					<p><strong>22.04.2020 </strong><br>
+					<%= __('Articles_90') %></p>
+					<a href="https://propozitsiya.com/es-vydelit-ukraine-25-mln-evro-dlya-podderzhki-malyh-fermerskih-hozyaystv">https://propozitsiya.com/es-vydelit-ukraine-25-mln-evro-dlya-podderzhki-malyh-fermerskih-hozyaystv</a><br>
+					<img src="../images/articles58.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">23.08.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					У Снігурівському відділенні Миколаївської аграрної компанії розпочато влагозарядка грунту під посів озимого ріпаку.</font></font></p>
+					<p><strong>21.04.2020 </strong><br>
+					<%= __('Articles_91') %></p>
+					<a href="https://propozitsiya.com/ssha-okazhet-finansovuyu-pomoshch-v-razmere-16-milliardov-postradavshim-ot-koronavirusa-fermeram">https://propozitsiya.com/ssha-okazhet-finansovuyu-pomoshch-v-razmere-16-milliardov-postradavshim-ot-koronavirusa-fermeram</a><br>
+					<img src="../images/articles59.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15.08.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Увага! </font><font style="vertical-align: inherit;">На сторінці Продукція з'явилася інформація про кількість і показниках якості пшениці врожаю 2018 року, пропонованої на продаж.</font></font></p>
+					<p><strong>15.04.2020 </strong><br>
+					<%= __('Articles_88') %></p>
+					<a href="https://propozitsiya.com/v-2020-godu-ukraina-budet-s-hlebom-nesmotrya-na-zasuhu">https://propozitsiya.com/v-2020-godu-ukraina-budet-s-hlebom-nesmotrya-na-zasuhu</a><br>
+					<img src="../images/articles56.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">29.07.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					У всіх підрозділах Миколаївської аграрної компанії йде підготовка ріллі під посів озимих майбутнього врожаю.</font></font></p>
+					<p><strong>14.04.2020 </strong><br>
+					<%= __('Articles_89') %></p>
+					<a href="https://propozitsiya.com/kabmin-polnostyu-sohranil-gospodderzhku-agrariev-posle-izmeneniy-v-byudzhete">https://propozitsiya.com/kabmin-polnostyu-sohranil-gospodderzhku-agrariev-posle-izmeneniy-v-byudzhete</a><br>
+					<img src="../images/articles57.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">25.07.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Прибирання закінчена!</font></font></p>
+					<p><strong>28.03.2020 </strong><br>
+					<%= __('Articles_85') %></p>
+					<a href="https://propozitsiya.com/vesenne-polevye-raboty-v-ukraine-idut-po-planu">https://propozitsiya.com/vesenne-polevye-raboty-v-ukraine-idut-po-planu</a><br>
+					<img src="../images/articles54.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">09.07.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Почалося збирання ярого ячменю та озимої пшениці в усіх підрозділах Миколаївської аграрної компанії!</font></font></p>
+					<p><strong>06.04.2020 </strong><br>
+					<%= __('Articles_86') %></p>
+					<a href="https://propozitsiya.com/rynok-zemli-progolosovan-kak-budet-osushchestvlyatsya-kontrol">https://propozitsiya.com/rynok-zemli-progolosovan-kak-budet-osushchestvlyatsya-kontrol</a><br>
+					<img src="../images/articles55.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">03.07.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Почалося збирання озимого ріпаку в усіх підрозділах Миколаївської аграрної компанії!</font></font></p>
+					<p><strong>03.04.2020 </strong><br>
+					<%= __('Articles_87') %></p>
+					<a href="https://propozitsiya.com/posevnaya-v-ukraine-nesmotrya-na-karantin-i-pogodnye-usloviya-proishodit-bez-kriticheskih-problem">https://propozitsiya.com/posevnaya-v-ukraine-nesmotrya-na-karantin-i-pogodnye-usloviya-proishodit-bez-kriticheskih-problem</a><br>
+					<img src="../images/articles54.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">29.06.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Почалося збирання озимого ячменю в усіх підрозділах Миколаївської аграрної компанії!</font></font></p>
+					<p><strong>28.03.2020 </strong><br>
+					<%= __('Articles_82') %></p>
+					<a href="https://propozitsiya.com/zakon-o-zemle-srochno-perepishut-osnovnye-trebovaniya-fermerov-udovletvoryat">https://propozitsiya.com/zakon-o-zemle-srochno-perepishut-osnovnye-trebovaniya-fermerov-udovletvoryat</a><br>
+					<img src="../images/articles51.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">09.06.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Увага! </font><font style="vertical-align: inherit;">На сторінці Продукція з'явилася інформація про насіння урожаю 2018 року, що пропонуються до продажу.</font></font></p>
+					<p><strong>27.03.2020 </strong><br>
+					<%= __('Articles_83') %></p>
+					<a href="https://propozitsiya.com/za-kakuyu-zemlyu-mozhno-ne-platit-nalogi-vo-vremya-karantina">https://propozitsiya.com/za-kakuyu-zemlyu-mozhno-ne-platit-nalogi-vo-vremya-karantina</a><br>
+					<img src="../images/articles52.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">27.05.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Посіви соняшнику на всій площі (1091,0 га) знаходяться в задовільному стані.</font></font></p>
+					<p><strong>26.03.2020 </strong><br>
+					<%= __('Articles_84') %></p>
+					<a href="https://propozitsiya.com/prodlenie-karantina-eshchyo-na-30-dney-negativno-otrazitsya-na-ekonomike-i-biznese">https://propozitsiya.com/prodlenie-karantina-eshchyo-na-30-dney-negativno-otrazitsya-na-ekonomike-i-biznese</a><br>
+					<img src="../images/articles53.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">14.05.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Завершено обробку озимих і ярих зернових культур гербіцидами, фунгіцидами та інсектицидами на всій площі посівів.</font></font></p>
+					<p><strong>20.03.2020 </strong><br>
+					<%= __('Articles_80') %></p>
+					<a href="https://propozitsiya.com/es-stal-glavnym-torgovym-partnerom-ukrainy-v-2019-godu">https://propozitsiya.com/es-stal-glavnym-torgovym-partnerom-ukrainy-v-2019-godu</a><br>
+					<img src="../images/articles48.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">25.04.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Вироблено обприскування посівів озимого ріпаку від комплексу шкідників з одночасною підгодівлею мікроелементами.</font></font></p>
+					<p><strong>24.03.2020 </strong><br>
+					<%= __('Articles_81') %></p>
+					<a href="https://propozitsiya.com/karantin-oslozhnyaet-posevnuyu-2020-pravitelstvo-dolzhno-uslyshat-agrariev">https://propozitsiya.com/karantin-oslozhnyaet-posevnuyu-2020-pravitelstvo-dolzhno-uslyshat-agrariev</a><br>
+					<img src="../images/articles49.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15.04.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Завершена підживлення озимих зернових культур аміачною селітрою за методом Бузницького (сівалками, прикореневим способом).</font></font></p>
+					<p><strong>15.03.2020 </strong><br>
+					<%= __('Articles_77') %></p>
+					<a href="https://propozitsiya.com/ukraina-stanet-liderom-po-tempam-eksporta-kuryatiny">https://propozitsiya.com/ukraina-stanet-liderom-po-tempam-eksporta-kuryatiny</a><br>
+					<img src="../images/articles45.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">28.03.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Закінчено посів ярого ячменю на площі 401,6 га.</font></font></p>
+					<p><strong>12.03.2020 </strong><br>
+					<%= __('Articles_78') %></p>
+					<a href="https://propozitsiya.com/rynok-zemli-kto-bystree-verhovnaya-rada-ili-espch">https://propozitsiya.com/rynok-zemli-kto-bystree-verhovnaya-rada-ili-espch</a><br>
+					<img src="../images/articles46.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12.03.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Моніторинг стану посівів озимих культур після зимівлі показав, що в задовільному стані знаходяться посіви озимої пшениці (3051,1 га), озимого ячменю (1490,9 га), озимого ріпаку (820,9 га).</font></font></p>
+					<p><strong>10.03.2020 </strong><br>
+					<%= __('Articles_79') %></p>
+					<a href="https://propozitsiya.com/zakon-o-rynke-zemli-mogut-prinyat-19-20-marta">https://propozitsiya.com/zakon-o-rynke-zemli-mogut-prinyat-19-20-marta</a><br>
+					<img src="../images/articles47.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 					<div class="hr"></div>
-					<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10.03.2018 </font></font></strong><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-					Завершена підживлення озимих культур аміачною селітрою по мерзлоталому грунті, що почалася в кінці лютого.</font></font></p>
+					<p><strong>08.03.2020 </strong><br>
+					<%= __('Articles_75') %></p>
+					<img src="../images/articles43.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>03.03.2020 </strong><br>
+					<%= __('Articles_76') %></p>
+					<a href="https://propozitsiya.com/nazvany-razmer-godovoy-arendy-1-ga-zemli-v-ukraine-po-rezultatam-aukcionov">https://propozitsiya.com/nazvany-razmer-godovoy-arendy-1-ga-zemli-v-ukraine-po-rezultatam-aukcionov</a><br>
+					<img src="../images/articles44.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>01.03.2020 </strong><br>
+					<%= __('Articles_73') %></p>
+					<a href="https://propozitsiya.com/molochnyy-krizis-poltavskaya-doneckaya-i-kievskaya-oblasti-aktivno-vyrezayut-korov">https://propozitsiya.com/molochnyy-krizis-poltavskaya-doneckaya-i-kievskaya-oblasti-aktivno-vyrezayut-korov</a><br>
+					<img src="../images/articles41.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>27.02.2020 </strong><br>
+					<%= __('Articles_74') %></p>
+					<a href="https://propozitsiya.com/minekonomiki-planiruet-ezhegodno-zakladyvat-v-byudzhet-bolee-13-mlrd-grn-na-podderzhku-agrariev">https://propozitsiya.com/minekonomiki-planiruet-ezhegodno-zakladyvat-v-byudzhet-bolee-13-mlrd-grn-na-podderzhku-agrariev</a><br>
+					<img src="../images/articles42.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>25.02.2020 </strong><br>
+					<%= __('Articles_70') %></p>
+					<a href="https://propozitsiya.com/gigantskie-zarplaty-v-goskorporacii-i-shchedrye-premii-raskryty-dohody-topov-ubytochnogo-gpzku">https://propozitsiya.com/gigantskie-zarplaty-v-goskorporacii-i-shchedrye-premii-raskryty-dohody-topov-ubytochnogo-gpzku</a><br>
+					<img src="../images/articles37.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>24.02.2020 </strong><br>
+					<%= __('Articles_71') %></p>
+					<a href="https://propozitsiya.com/kak-rynok-zemli-povliyaet-na-perspektivy-po-urozhayam">https://propozitsiya.com/kak-rynok-zemli-povliyaet-na-perspektivy-po-urozhayam</a><br>
+					<img src="../images/articles38.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>21.02.2020 </strong><br>
+					<%= __('Articles_72') %></p>
+					<a href="https://propozitsiya.com/rada-rozglyanula-ponad-15-tisyachi-zemelnih-popravok-i-roziyshlasya-do-bereznya">https://propozitsiya.com/rada-rozglyanula-ponad-15-tisyachi-zemelnih-popravok-i-roziyshlasya-do-bereznya</a><br>
+					<img src="../images/articles39.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>13.02.2020 </strong><br>
+					<%= __('Articles_68') %></p>
+					<a href="https://propozitsiya.com/pravitelstvo-vvelo-konsultacii-pri-rynochnom-nadzore">https://propozitsiya.com/pravitelstvo-vvelo-konsultacii-pri-rynochnom-nadzore</a><br>
+					<img src="../images/articles35.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>11.02.2020 </strong><br>
+					<%= __('Articles_69') %></p>
+					<a href="https://propozitsiya.com/v-radu-vnesli-zakon-o-fonde-garantirovaniya-kreditov-v-selskom-hozyaystve">https://propozitsiya.com/v-radu-vnesli-zakon-o-fonde-garantirovaniya-kreditov-v-selskom-hozyaystve</a><br>
+					<img src="../images/articles36.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>09.02.2020 </strong><br>
+					<%= __('Articles_66') %></p>
+					<a href="https://propozitsiya.com/amerikanskie-eksperty-privetstvuyut-zemelnuyu-reformu-no-predosteregayut-ob-opasnosti">https://propozitsiya.com/amerikanskie-eksperty-privetstvuyut-zemelnuyu-reformu-no-predosteregayut-ob-opasnosti</a><br>
+					<img src="../images/articles33.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>08.02.2020 </strong><br>
+					<%= __('Articles_67') %></p>
+					<a href="https://propozitsiya.com/mirovye-ceny-na-prodovolstvie-za-god-vyrosli-bolee-chem-na-10">https://propozitsiya.com/mirovye-ceny-na-prodovolstvie-za-god-vyrosli-bolee-chem-na-10</a><br>
+					<img src="../images/articles34.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>03.02.2020 </strong><br>
+					<%= __('Articles_64') %></p>
+					<a href="https://propozitsiya.com/stalo-vidomo-koly-rada-rozglyane-zakonoproyekt-pro-rynok-zemli">https://propozitsiya.com/stalo-vidomo-koly-rada-rozglyane-zakonoproyekt-pro-rynok-zemli</a><br>
+					<img src="../images/articles31.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>29.01.2020 </strong><br>
+					<%= __('Articles_65') %></p>
+					<a href="https://propozitsiya.com/zemlevladelcy-o-rynke-zemli-92-krestyan-za">https://propozitsiya.com/zemlevladelcy-o-rynke-zemli-92-krestyan-za</a><br>
+					<img src="../images/articles32.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>23.01.2020 </strong><br>
+					<%= __('Articles_61') %></p>
+					<a href="https://propozitsiya.com/v-ukraine-sozdali-komitet-po-upravleniyu-zemelnymi-otnosheniyami">https://propozitsiya.com/v-ukraine-sozdali-komitet-po-upravleniyu-zemelnymi-otnosheniyami</a><br>
+					<img src="../images/articles27.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>22.01.2020 </strong><br>
+					<%= __('Articles_62') %></p>
+					<a href="https://propozitsiya.com/rost-ekonomiki-strany-uskoritsya-posle-zapuska-rynka-zemli-op">https://propozitsiya.com/rost-ekonomiki-strany-uskoritsya-posle-zapuska-rynka-zemli-op</a><br>
+					<img src="../images/articles28.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>21.01.2020 </strong><br>
+					<%= __('Articles_63') %></p>
+					<a href="https://propozitsiya.com/kak-zapusk-rynka-zemli-povliyaet-na-bankovskuyu-sistem">https://propozitsiya.com/kak-zapusk-rynka-zemli-povliyaet-na-bankovskuyu-sistem</a><br>
+					<img src="../images/articles29.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>13.01.2020 </strong><br>
+					<%= __('Articles_58') %></p>
+					<%= __('Articles_60') %></p>
+					<a href="https://propozitsiya.com/rynok-zemli-v-rade-mogut-rassmatrivat-ot-3-chasov-do-2-mesyacev-sovetnik-premera">https://propozitsiya.com/rynok-zemli-v-rade-mogut-rassmatrivat-ot-3-chasov-do-2-mesyacev-sovetnik-premera</a><br>
+					<img src="../images/articles25.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>10.01.2020 </strong><br>
+					<%= __('Articles_59') %></p>
+					<a href="https://propozitsiya.com/gostamozhsluzhba-opublikovala-grafik-snizheniya-eksportnyh-poshlin-na-selhozprodukciyu">https://propozitsiya.com/gostamozhsluzhba-opublikovala-grafik-snizheniya-eksportnyh-poshlin-na-selhozprodukciyu</a><br>
+					<img src="../images/articles26.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>03.01.2020 </strong><br>
+					<%= __('Articles_55') %></p>
+					<a href="https://propozitsiya.com/vstupil-v-silu-zakon-ukrainy-o-pravovoy-ohrane-geograficheskih-oboznacheniy">https://propozitsiya.com/vstupil-v-silu-zakon-ukrainy-o-pravovoy-ohrane-geograficheskih-oboznacheniy</a><br>
+					<img src="../images/articles22.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>02.01.2020 </strong><br>
+					<%= __('Articles_56') %></p>
+					<a href="https://propozitsiya.com/ceny-na-pshenicu-byut-rekordy">https://propozitsiya.com/ceny-na-pshenicu-byut-rekordy</a><br>
+					<img src="../images/articles23.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>01.01.2020 </strong><br>
+					<%= __('Articles_57') %></p>
+					<a href="https://propozitsiya.com/malye-i-srednie-predpriyatiya-doneckoy-i-luganskoy-oblastey-mogut-poluchit-kompensaciyu-do-50">https://propozitsiya.com/malye-i-srednie-predpriyatiya-doneckoy-i-luganskoy-oblastey-mogut-poluchit-kompensaciyu-do-50</a><br>
+					<img src="../images/articles24.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>31.12.2019 </strong><br>
+					<%= __('Articles_52') %></p>
+					<img src="../images/articles19.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>30.12.2019  </strong><br>
+					<%= __('Articles_53') %></p>
+					<a href="https://propozitsiya.com/pravitelstvo-cherez-sud-razblokirovalo-vyplatu-dotaciy-dlya-agrariev-na-1-mlrd-grn">https://propozitsiya.com/pravitelstvo-cherez-sud-razblokirovalo-vyplatu-dotaciy-dlya-agrariev-na-1-mlrd-grn</a><br>
+					<img src="../images/articles20.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>29.12.2019  </strong><br>
+					<%= __('Articles_54') %></p>
+					<a href="https://propozitsiya.com/agrarnyy-komitet-rekomendoval-vr-prinyat-zakon-o-rynke-zemli">https://propozitsiya.com/agrarnyy-komitet-rekomendoval-vr-prinyat-zakon-o-rynke-zemli</a><br>
+					<img src="../images/articles21.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>23.12.2019  </strong><br>
+					<%= __('Articles_49') %></p>
+					<a href="https://agronews.ua/node/155159/">https://agronews.ua/node/155159/</a><br>
+					<img src="../images/articles16.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>21.12.2019  </strong><br>
+					<%= __('Articles_50') %></p>
+					<a href="https://agronews.ua/node/155005/">https://agronews.ua/node/155005/</a><br>
+					<img src="../images/articles17.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>18.12.2019  </strong><br>
+					<%= __('Articles_51') %></p>
+					<a href="https://agronews.ua/node/154632/">https://agronews.ua/node/154632/</a><br>
+					<img src="../images/articles18.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>18.12.2019  </strong><br>
+					<%= __('Articles_47') %></p>
+					<a href="https://propozitsiya.com/v-ukraine-vvedut-edinyy-minimalnyy-nalog-s-odnogo-gektara-zemli">https://propozitsiya.com/v-ukraine-vvedut-edinyy-minimalnyy-nalog-s-odnogo-gektara-zemli</a><br>
+					<img src="../images/articles14.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>13.12.2019  </strong><br>
+					<%= __('Articles_48') %></p>
+					<a href="https://propozitsiya.com/agrarnyy-komitet-segodnya-zavershil-obsuzhdenie-rynka-zemli">https://propozitsiya.com/agrarnyy-komitet-segodnya-zavershil-obsuzhdenie-rynka-zemli</a><br>
+					<img src="../images/articles15.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>11.12.2019  </strong><br>
+					<%= __('Articles_44') %></p>
+					<a href="https://propozitsiya.com/ukrzaliznycya-vvela-sistemu-trehmesyachnogo-planirovaniya-perevozki-zernovyh">https://propozitsiya.com/ukrzaliznycya-vvela-sistemu-trehmesyachnogo-planirovaniya-perevozki-zernovyh</a><br>
+					<img src="../images/articles11.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>10.12.2019  </strong><br>
+					<%= __('Articles_45') %></p>
+					<a href="https://propozitsiya.com/urozhay-zernovyh-uzhe-na-5-millionov-tonn-prevyshaet-proshlogodniy">https://propozitsiya.com/urozhay-zernovyh-uzhe-na-5-millionov-tonn-prevyshaet-proshlogodniy</a><br>
+					<img src="../images/articles12.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>8.12.2019  </strong><br>
+					<%= __('Articles_46') %></p>
+					<a href="https://propozitsiya.com/izmeneniya-klimata-uchenye-obnaruzhili-neozhidannyy-plyus-globalnogo-potepleniya-dlya-fermerov">https://propozitsiya.com/izmeneniya-klimata-uchenye-obnaruzhili-neozhidannyy-plyus-globalnogo-potepleniya-dlya-fermerov</a><br>
+					<img src="../images/articles13.jpg" alt="" style="width:30%;margin-bottom: 10px;">
+					<div class="hr"></div>
+					<p><strong>03.12.2019  </strong><br>
+					<%= __('Articles_41') %></p>
+					<a href="https://propozitsiya.com/soglashenie-ob-associacii-v-deystvii-eksport-agroprodukcii-v-es-bet-istoricheskie-rekordy-0">https://propozitsiya.com/soglashenie-ob-associacii-v-deystvii-eksport-agroprodukcii-v-es-bet-istoricheskie-rekordy-0</a><br>
+					<img src="../images/articles8.jpg" alt="" style="width:30%;margin-bottom: 10px;">
 				</div>
 
 			</div>
@@ -257,19 +529,18 @@
 	</div>
 	<!-- /footer -->
 </div>
+<script src="../js/script1.js" type="text/javascript"></script>
 <script type="text/javascript">
-var enButton = document.getElementById('en');
-var uaButton = document.getElementById('ua');
-console.log(enButton)
-enButton.addEventListener('click', () => {
-  document.cookie = "lang=en; expires: Fri, 31 Dec 9999 23:59:59 GMT";
-	location.reload();
-})
-
-uaButton.addEventListener('click', () => {
-  document.cookie = "lang=ua; expires: Fri, 31 Dec 9999 23:59:59 GMT";
-	location.reload();
-})
+var desc = document.querySelectorAll('[name="description"]')[0]
+var keywords = document.querySelectorAll('[name="keywords"]')[0]
+console.log(desc)
+if(getCookie('lang') === undefined || getCookie('lang') === 'en') {
+	desc.setAttribute("content", "Новини сільського господарства України, новини агроринку, новини АПК - компанія UkraineFoods  - GK parts group - Ми ведемо агро бізнес у 19 областях України.");
+	keywords.setAttribute("content", "новости агрорынка, новости сельского хозяйства Украины,  новости апк, агро новини, новини аграрного бізнесу");
+} else {
+	desc.setAttribute("content", "News from the Ukrainian state thanks to Ukraine, news to the agricultural market, news to the agricultural sector - UkraineFoods company - GK parts group - We are operating in 19 regions of Ukraine.");
+	keywords.setAttribute("content", "agricultural market news, agricultural news of Ukraine, apk news, agro novini, novi agrarian business");
+}
 </script>
 </body>
 </html>
